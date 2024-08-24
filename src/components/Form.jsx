@@ -114,7 +114,7 @@ const Form = ({ handleChange, data, errors, outofnames, handleSubmit }) => {
             outofnames()
               ? "opacity-10 cursor-not-allowed"
               : "cursor-pointer opacity-100 hover:bg-white hover:text-veryDarkViolet"
-          } text-white rounded-lg p-3 bg-[#220532]  border-veryDarkViolet  duration-200`}
+          } text-white rounded-lg p-3 bg-[#220532] border-2  border-veryDarkViolet  duration-200`}
         >
           Confirm
         </button>

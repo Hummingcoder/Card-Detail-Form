@@ -150,28 +150,26 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("yeah");
-    if (outofnames()) {
+    if (!outofnames()) {
+      console.log("yeah");
       setSubmited(true);
     }
   };
   function outofnames() {
     let val;
+
     for (let i in refData) {
       for (let i in errors) {
         if (refData[i] === "" || errors[i] !== "") {
           val = true;
           break;
-        }
-        {
+        } else {
           val = false;
         }
       }
+      if (refData.number.length !== 19) val = true;
+      if (refData.cvc.length < 3) val = true;
     }
-    if (refData.number.length !== 19) val = true;
-    if (refData.cvc.length < 3) val = true;
-
-    console.log(val, refData.number.length, refData.cvc.length);
 
     return val;
   }
