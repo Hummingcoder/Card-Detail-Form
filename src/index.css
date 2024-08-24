@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+<div className="absolute z-50 top-0 left-0 w-full p-4 h-full flex flex-col items-start justify-between">
+              <img className="w-[60px]" src="./images/card-logo.svg" alt="" />
+              <div className="flex flex-col gap-1 w-full text-white ">
+                <p className="text-clamp font-semibold">
+                  {number.substring(0, 4)} {number.substring(0, 4)}{" "}
+                  {number.substring(0, 4)} {number.substring(0, 4)}
+                </p>
+                <div className="flex w-full justify-between items-center text-sm">
+                  <p>vishal D.</p>
+                  <p>00/00</p>
+                </div>
+              </div>
+            </div> */
